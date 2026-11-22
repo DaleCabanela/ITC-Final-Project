@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souvenir Store | Rizal Park</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2 class="logo">RIZAL PARK</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="map.html">Map</a>
+        <a href="info.html">Information</a>
+        <a href="store.html">Store</a>
+        <a href="about.html">About Us</a>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h1>Souvenir Store</h1>
+    <p>Choose a souvenir to add to your shopping cart.</p>
+</section>
+
+<section class="section">
+    <div class="cards">
+
+        <div class="card product">
+            <img src="images/rizal-shirt.jpg" alt="Rizal Park Shirt">
+            <h3>Rizal Park Shirt</h3>
+            <p>₱350</p>
+            <button onclick="addToCart('Rizal Park Shirt', 350)">Add to Cart</button>
+        </div>
+
+        <div class="card product">
+            <img src="images/park-magnet.jpg" alt="Park Magnet">
+            <h3>Park Magnet</h3>
+            <p>₱100</p>
+            <button onclick="addToCart('Park Magnet', 100)">Add to Cart</button>
+        </div>
+
+        <div class="card product">
+            <img src="images/filipino-tote-bag.jpg" alt="Filipino Tote Bag">
+            <h3>Filipino Tote Bag</h3>
+            <p>₱200</p>
+            <button onclick="addToCart('Filipino Tote Bag', 200)">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="section cart-section">
+    <h2>Shopping Cart</h2>
+
+    <div id="cart-items">
+        <p>Your cart is empty.</p>
+    </div>
+
+    <h3>Total: ₱<span id="cart-total">0</span></h3>
+
+    <button onclick="clearCart()">Clear Cart</button>
+    <button onclick="checkout()">Checkout</button>
+</section>
+
+<footer>
+    <p>© 2026 Rizal Park Tourism Website</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
