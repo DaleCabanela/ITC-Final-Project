@@ -157,12 +157,10 @@ nav a:hover {
 
 .card img {
     width: 100%;
-    height: 300px;
-    object-fit: contain;
+    height: 190px;
+    object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
-    background: white;
-
 }
 
 .card h3 {
@@ -257,6 +255,22 @@ button:hover {
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+}
+
+.product img {
+    width: 100%;
+    object-fit: contain;
+    background: white;
+    border-radius: 8px;
+}
+.shirt-img {
+    height: 350px;
+}
+.magnet-img {
+    height: 180px;
+}
+.bag-img {
+    height: 300px;
 }
 
 .member a {
